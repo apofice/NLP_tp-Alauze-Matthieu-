@@ -28,9 +28,9 @@ from textblob import TextBlob
 def extractionPkl():
   """
   file1=open('nmf_model.pkl','rb') 
-  file2=open('nmf_vectorizer.pkl','rb')
+  file2=open('nmf_vectorizer','rb')
   """
-  with (open("nmf_vectorizer.pkl", "rb")) as f:
+  with (open("nmf_vectorizer", "rb")) as f:
       file2=pickle.load(f)
         
   with (open("nmf_model.pkl", "rb")) as p:
