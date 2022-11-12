@@ -32,7 +32,7 @@ vectorizer=extractionPkl()[1]
 
 if st.button(label = "Détecter le sujet d'insatisfaction") == True:
      
-    prediction(model,vectorizer,n_topics,text)[2]
+    prediction(model,vectorizer,n_topics,text)
 
 
 
