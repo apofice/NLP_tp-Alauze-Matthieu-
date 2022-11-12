@@ -26,10 +26,16 @@ from textblob import TextBlob
 
 
 def extractionPkl():
-
+   """
   file1=open('nmf_model.pkl','rb') 
   file2=open('nmf_vectorizer.pkl','rb')
-    
+   """
+  with (open("nmf_vectorizer", "rb")) as f:
+       file2 = pickle.load(f)
+        
+  with (open("nmf_model.pkl", "rb")) as p:
+      file1 = pickle.load(p)
+      
   return load(file1) ,load(file2)
 
 
