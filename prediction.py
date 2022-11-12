@@ -36,7 +36,7 @@ def extractionPkl():
   with (open("nmf_model", "rb")) as p:
    file1=pickle.load(p)
       
-  return load(file1) ,load(file2)
+  return file1 ,file2
 
 
 
