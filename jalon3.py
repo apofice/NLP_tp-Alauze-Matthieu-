@@ -27,8 +27,11 @@ n_topics=st.number_input(label= "Le nombre de topics", min_value=0, max_value=15
 with st.sidebar:
         st.radio(monlabel, options)
         text=st.text_input(label="Donnez nous votre avis")
-
+model=extractionPkl()[0]
+vectorizer=extractionPkl()[1]
+st.write(model,vectorizer)
 if st.button(label = "Détecter le sujet d'insatisfaction") == True:
+     
     prediction(extractionPkl()[0],extractionPkl()[1],n_topics,text)[2]
 
 
