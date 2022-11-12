@@ -29,10 +29,10 @@ with st.sidebar:
         text=st.text_input(label="Donnez nous votre avis")
 model=extractionPkl()[0]
 vectorizer=extractionPkl()[1]
-st.write(model,vectorizer)
+
 if st.button(label = "Détecter le sujet d'insatisfaction") == True:
      
-    prediction(extractionPkl()[0],extractionPkl()[1],n_topics,text)[2]
+    prediction(model,vectorizer,n_topics,text)[2]
 
 
 
