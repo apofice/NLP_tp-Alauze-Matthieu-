@@ -50,7 +50,7 @@ def prediction(model,vectorizer,n_topic,new_reviews):
 
   prediction= model.transform(new_reviews_transformed)
  
-  topics=['qualité service bar','qualité sauce ','Prix abordable','temps d arriver','garniture pizza','qualité nourriture restaurant','qualiter service','plat mexicain','ordre service','hestetique du lieux','organisation manager','menu poulet frit','sandwitch','burger','temp attente']
+  topics=['organisation manager','qualité sauce ','garniture pizza','Prix abordable','temps d arriver','qualité nourriture restaurant','la qualité du burger','qualiter service','qualité service bar','plat mexicain','ordre service','hestetique du lieux','menu poulet frit','qualité des sandwitchs','temp attente']
   if sentimentBlob<0 and sentimentBlob>-1:
  
     max = np.argsort(prediction)
