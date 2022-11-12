@@ -57,8 +57,8 @@ def prediction(model,vectorizer,n_topic,new_reviews):
     return sentimentBlob,prediction,topic
 
   return sentimentBlob
-new_reviews = "I dont like chicken "
-prediction(extractionPkl()[0],extractionPkl()[1],2,new_reviews)[2]
+
+#prediction(extractionPkl()[0],extractionPkl()[1],2,)[2]
 
 
 
