@@ -62,7 +62,7 @@ def prediction(model,vectorizer,n_topic,new_reviews):
       topic.append(topics[max_list[i]])  
     return sentimentBlob,prediction,topic
 
-  return sentimentBlob
+  return sentimentBlob ,'text' ,'Le commentaire est plutot positif'
 
 #prediction(extractionPkl()[0],extractionPkl()[1],2,)[2]
 
