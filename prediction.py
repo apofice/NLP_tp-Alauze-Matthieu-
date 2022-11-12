@@ -22,7 +22,7 @@ from pickle import load
 import pandas as pd
 import numpy as np
 import textblob 
-from textblob import *
+from textblob import TextBlob
 
 
 def extractionPkl():
