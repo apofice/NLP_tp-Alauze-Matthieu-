@@ -13,7 +13,7 @@ Created on Fri Nov 11 16:57:36 2022
 import streamlit as st
 import pandas as pd
 import numpy as np
-
+from prediction import *
 
 # Presentation de l'application
 
