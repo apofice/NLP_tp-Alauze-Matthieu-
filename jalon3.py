@@ -24,13 +24,15 @@ options = pd.DataFrame(['Avis dataset', 'Texte libre'])
 
 n_topics=st.number_input(label= "Le nombre de topics", min_value=0, max_value=15)
 
+with st.sidebar:
+        st.radio(monlabel, options)
+        text=st.text_input(label="Donnez nous votre avis")
+
 if st.button(label = "Détecter le sujet d'insatisfaction") == True:
     prediction(extractionPkl()[0],extractionPkl()[1],n_topics,text)[2]
 
 
-with st.sidebar:
-        st.radio(monlabel, options)
-        text=st.text_input(label="Donnez nous votre avis")
+
 
 #!streamlit run C:\matthieu\I3\tpNLP\jalon3.py
 
