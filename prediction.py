@@ -27,8 +27,8 @@ from textblob import TextBlob
 
 def extractionPkl():
 
-  file1=open('https://github.com/apofice/NLP_tp-Alauze-Matthieu-/blob/main/nmf_model.pkl','rb') 
-  file2=open('https://github.com/apofice/NLP_tp-Alauze-Matthieu-/blob/main/nmf_vectorizer.pkl','rb')
+  file1=open('nmf_model.pkl','rb') 
+  file2=open('nmf_vectorizer.pkl','rb')
     
   return load(file1) ,load(file2)
 
