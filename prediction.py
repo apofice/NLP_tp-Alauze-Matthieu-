@@ -33,7 +33,7 @@ def extractionPkl():
   with (open("nmf_vectorizer", "rb")) as f:
       file2=pickle.load(f)
         
-  with (open("nmf_model.pkl", "rb")) as p:
+  with (open("nmf_model", "rb")) as p:
    file1=pickle.load(p)
       
   return load(file1) ,load(file2)
