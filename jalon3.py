@@ -22,7 +22,7 @@ st.title('Application : RevieWAnalyzer')
 monlabel = "Quel texte analyser ? "
 options = pd.DataFrame(['Avis dataset', 'Texte libre'])
 
-st.number_input(label= "Le nombre de topics", min_value=0, max_value=15)
+n_topics=st.number_input(label= "Le nombre de topics", min_value=0, max_value=15)
 
 if st.button(label = "Détecter le sujet d'insatisfaction") == True:
     prediction(extractionPkl()[0],extractionPkl()[1],n_topics,text)[2]
