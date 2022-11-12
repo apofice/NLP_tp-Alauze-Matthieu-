@@ -30,7 +30,7 @@ if st.button(label = "Détecter le sujet d'insatisfaction") == True:
 
 with st.sidebar:
         st.radio(monlabel, options)
-        st.text_input(label="Donnez nous votre avis")
+        text=st.text_input(label="Donnez nous votre avis")
 
 #!streamlit run C:\matthieu\I3\tpNLP\jalon3.py
 
